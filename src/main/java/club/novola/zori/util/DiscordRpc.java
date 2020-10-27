@@ -23,14 +23,14 @@ public class DiscordRpc {
     private DiscordEventHandlers handlers;
 
     private void init(){
-        lib.Discord_Initialize("718760043738038304" /* discord app id */, handlers, true, "");
+        lib.Discord_Initialize("770454455627022366" /* discord app id */, handlers, true, "");
 
         presence.startTimestamp = System.currentTimeMillis() / 1000;
         presence.details = "";
         presence.state = state;
         presence.largeImageKey = "img"; // image names you uploaded to the discord dev thing
-		presence.smallImageKey = "trans"; // image names you uploaded to the discord dev thing
-		presence.smallImageText = "trans rights!"; // text that shows when you hover over the small image
+		presence.smallImageKey = "zori"; // image names you uploaded to the discord dev thing
+		presence.smallImageText = "Zori v0.0.1-BETA"; // text that shows when you hover over the small image
         lib.Discord_UpdatePresence(presence);
     }
 
