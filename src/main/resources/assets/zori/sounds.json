@@ -1,0 +1,51 @@
+{
+  "godlike":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:godlike", "stream": true
+    }]
+  },
+  "holyshit":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:holyshit", "stream": true
+    }]
+  },
+  "impressive":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:impressive", "stream": true
+    }]
+  },
+  "ownage":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:ownage", "stream": true
+    }]
+  },
+  "perfect":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:perfect", "stream": true
+    }]
+  },
+  "wickedsick":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:wickedsick", "stream": true
+    }]
+  },
+  "skeet":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "blackout:skeet", "stream": false
+    }]
+  }
+}

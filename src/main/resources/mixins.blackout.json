@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "club.novola.zori.mixin.mixins",
+  "refmap": "mixins.zori.refmap.json",
+  "client": [
+    "MixinPlayerControllerMP",
+    "MixinNetworkManager",
+    "MixinGuiNewChat"
+  ]
+}
