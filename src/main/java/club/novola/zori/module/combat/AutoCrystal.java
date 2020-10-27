@@ -46,7 +46,7 @@ public class AutoCrystal extends Module {
     private Setting<Double> hitRange = register("HitRange", 5.5d, 0.0d, 7.0d);
     private Setting<Double> wallsRange = register("WallRange", 3.2d, 0.0d, 7.0d);
     private Setting<Integer> hitAttempts = register("HitAttempts", -1, -1, 10);
-
+    private Setting<Boolean> ownCrystal = register("OwnCrystal", false);
     private Setting<Boolean> autoSwitch = register("AutoSwitch", false);
     private Setting<Boolean> noGappleSwitch = register("NoGapSwitch", true);
     private Setting<Double> placeRange = register("PlaceRange", 5.0d, 0.0d, 7.0d);

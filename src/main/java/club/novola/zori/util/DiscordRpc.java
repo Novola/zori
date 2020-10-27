@@ -4,6 +4,7 @@ import club.minnced.discord.rpc.DiscordEventHandlers;
 import club.minnced.discord.rpc.DiscordRPC;
 import club.minnced.discord.rpc.DiscordRichPresence;
 import club.novola.zori.Zori;
+import club.novola.zori.util.Wrapper;
 
 // https://github.com/MinnDevelopment/java-discord-rpc/blob/master/examples/java/ml/yuuki/chris/rpc/examples/WindowTest.java
 public class DiscordRpc {
@@ -23,14 +24,19 @@ public class DiscordRpc {
     private DiscordEventHandlers handlers;
 
     private void init(){
-        lib.Discord_Initialize("718760043738038304" /* discord app id */, handlers, true, "");
+        lib.Discord_Initialize("770454455627022366" /* discord app id */, handlers, true, "");
 
         presence.startTimestamp = System.currentTimeMillis() / 1000;
         presence.details = "";
         presence.state = state;
+<<<<<<< HEAD
+        presence.largeImageKey = "zori"; // image names you uploaded to the discord dev thing
+        presence.largeImageText = "Zori v0.0.1-beta";
+=======
         presence.largeImageKey = "img"; // image names you uploaded to the discord dev thing
-		presence.smallImageKey = "trans"; // image names you uploaded to the discord dev thing
-		presence.smallImageText = "trans rights!"; // text that shows when you hover over the small image
+		presence.smallImageKey = "zori"; // image names you uploaded to the discord dev thing
+		presence.smallImageText = "Zori v0.0.1-BETA"; // text that shows when you hover over the small image
+>>>>>>> 0a9a231cace85615a0f47c6b18dd8ba0fcd4be23
         lib.Discord_UpdatePresence(presence);
     }
 

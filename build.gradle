@@ -119,9 +119,9 @@ jar {
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'me.finz0.blackout.mixin.CoreMod',
+                'FMLCorePlugin': 'club.novola.zori.mixin.CoreMod',
                 'ForceLoadAsMod': 'true',
-                'FMLAT': 'blackout_at.cfg'
+                'FMLAT': 'zori_at.cfg'
         )
     }
 }

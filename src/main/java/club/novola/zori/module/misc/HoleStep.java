@@ -6,9 +6,9 @@ import club.novola.zori.module.Module;
 import club.novola.zori.util.Wrapper;
 import net.minecraft.util.math.BlockPos;
 
-public class HoleTP extends Module {
-    public HoleTP() {
-        super("HoleTP", Category.MISC);
+public class HoleStep extends Module {
+    public HoleStep() {
+        super("HoleStep", Category.MISC);
     }
 
     public void onUpdate(){

@@ -44,8 +44,10 @@ public class ModuleManager {
         new HoleESP();
         new ArmorWarning();
         new OffhandCrystal();
+        new OffhandGap();
         new AutoTotem();
         new Surround();
+        new SecretClose();
         new SoundEffects();
         new NoRender();
         new TPS();
@@ -55,7 +57,8 @@ public class ModuleManager {
         new Reach();
         new AutoCrystal();
         new InventoryPreview();
-        new HoleTP();
+        new HoleStep();
+        new ReverseStep();
         new OffhandMode();
         new Server();
         new PvpInfo();

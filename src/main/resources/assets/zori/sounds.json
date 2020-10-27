@@ -3,49 +3,49 @@
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:godlike", "stream": true
+      "name": "zori:godlike", "stream": true
     }]
   },
   "holyshit":
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:holyshit", "stream": true
+      "name": "zori:holyshit", "stream": true
     }]
   },
   "impressive":
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:impressive", "stream": true
+      "name": "zori:impressive", "stream": true
     }]
   },
   "ownage":
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:ownage", "stream": true
+      "name": "zori:ownage", "stream": true
     }]
   },
   "perfect":
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:perfect", "stream": true
+      "name": "zori:perfect", "stream": true
     }]
   },
   "wickedsick":
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:wickedsick", "stream": true
+      "name": "zori:wickedsick", "stream": true
     }]
   },
   "skeet":
   {
     "category": "entity",
     "sounds": [{
-      "name": "blackout:skeet", "stream": false
+      "name": "zori:skeet", "stream": false
     }]
   }
 }

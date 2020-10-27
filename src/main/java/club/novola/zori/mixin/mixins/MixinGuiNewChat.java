@@ -113,12 +113,12 @@ public class MixinGuiNewChat extends Gui {
                                 boolean name = mc.player != null && s.toLowerCase().contains(mc.player.getName().toLowerCase());
                                 //drawRect(-2, j2 - 9, 0 + k + 4, j2, l1 / 2 << 24);
                                 if(name)
-                                    drawRect(mc.fontRenderer.getStringWidth("00:00 ") - 1, j2 - 9, mc.fontRenderer.getStringWidth(s) + 1, j2 + 1, Zori.getInstance().clientSettings.getColor(69));
+                                    drawRect(mc.fontRenderer.getStringWidth("<00:00> ") - 1, j2 - 9, mc.fontRenderer.getStringWidth(s) + 1, j2 + 1, Zori.getInstance().clientSettings.getColor(69));
                                 GlStateManager.enableBlend();
                                 int color = Zori.getInstance().clientSettings.getColor() + (l1 << 24);
                                 if(color < Integer.MAX_VALUE)
                                     mc.fontRenderer.drawStringWithShadow(s.split(" ")[0], 0f, (float)(j2 - 8), color);
-                                this.mc.fontRenderer.drawStringWithShadow(s.substring(6), mc.fontRenderer.getStringWidth("00:00 "), (float)(j2 - 8), 16777215 + (l1 << 24));
+                                this.mc.fontRenderer.drawStringWithShadow(s.substring(6), mc.fontRenderer.getStringWidth("<00:00> "), (float)(j2 - 8), 16777215 + (l1 << 24));
                                 GlStateManager.disableAlpha();
                                 GlStateManager.disableBlend();
                             }
