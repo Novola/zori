@@ -29,14 +29,8 @@ public class DiscordRpc {
         presence.startTimestamp = System.currentTimeMillis() / 1000;
         presence.details = "";
         presence.state = state;
-<<<<<<< HEAD
         presence.largeImageKey = "zori"; // image names you uploaded to the discord dev thing
         presence.largeImageText = "Zori v0.0.1-beta";
-=======
-        presence.largeImageKey = "img"; // image names you uploaded to the discord dev thing
-		presence.smallImageKey = "zori"; // image names you uploaded to the discord dev thing
-		presence.smallImageText = "Zori v0.0.1-BETA"; // text that shows when you hover over the small image
->>>>>>> 0a9a231cace85615a0f47c6b18dd8ba0fcd4be23
         lib.Discord_UpdatePresence(presence);
     }
 
