@@ -8,7 +8,7 @@ import static club.novola.zori.util.Wrapper.mc;
 
 public class OffhandSwing extends Module {
     public OffhandSwing() {
-        super("OffhandSwing", Category.GUI);
+        super("OffhandSwing", Category.RENDER);
     }
 
     public void onUpdate() {
