@@ -1,0 +1,6 @@
+package club.novola.zori.module.render;
+
+public class noHitBox extends Module {
+    public noHitBox() {
+        super("noHitBox", Category.MISC);
+    }
