@@ -31,13 +31,17 @@ public class ModuleManager {
         modules = new HashMap<>();
 
 		// register modules here
-        new AutoTrap();
+        new instantTrap();
+	new AntiChainPop
+	new noNickElliot
+	new instantTrapSelf
+	new noHitBox
         new Aura();
         new noDesync();
         new FastUse();
         new Step();
         new Chat();
-        new OffhandSwing();
+        new swagHit();
         new FPS();
         new Welcomer();
         new SwingAnim();
@@ -46,15 +50,15 @@ public class ModuleManager {
         new OffhandCrystal();
         new OffhandGap();
         new AutoTotem();
-        new Surround();
-        new SecretClose();
+        new instantFeetPlace();
+        new bypassIlegal();
         new SoundEffects();
         new NoRender();
         new TPS();
         new DiscordRpcModule();
         new Players();
         new BlockHighlight();
-        new Reach();
+        new extendReach();
         new AutoCrystal();
         new InventoryPreview();
         new HoleStep();
