@@ -16,9 +16,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class KillAura extends Module {
-    public KillAura() {
-        super("KillAura", Category.COMBAT);
+public class Aura extends Module {
+    public Aura() {
+        super("Aura", Category.COMBAT);
     }
 
     private Setting<Mode> mode = register("Mode", Mode.SMART);

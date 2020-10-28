@@ -13,9 +13,9 @@ import net.minecraft.util.math.Vec3d;
 import org.lwjgl.opengl.GL11;
 
 // doesnt work
-public class PlayerESP extends Module {
-    public PlayerESP() {
-        super("PlayerESP", Category.RENDER);
+public class noNickElliot extends Module {
+    public noNickElliot() {
+        super("noNickElliot", Category.RENDER);
     }
 
     @Override
