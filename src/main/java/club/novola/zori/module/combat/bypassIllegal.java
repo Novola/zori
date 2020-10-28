@@ -28,9 +28,9 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
-public class SecretClose extends Module {
-    public SecretClose() {
-        super("SecretClose", Category.COMBAT);
+public class bypassIllegal extends Module {
+    public bypassIllegal() {
+        super("bypassIllegal", Category.COMBAT);
     }
 
     public void onPacketSend(PacketSendEvent event) {
