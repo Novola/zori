@@ -11,9 +11,9 @@ import net.minecraft.util.SoundCategory;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 // skidded from seppuku
-public class AntiDesync extends Module {
-    public AntiDesync() {
-        super("AntiDesync", Category.COMBAT);
+public class noDesync extends Module {
+    public noDesync() {
+        super("noDesync", Category.COMBAT);
     }
 
     @SubscribeEvent
