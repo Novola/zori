@@ -3,9 +3,9 @@ package club.novola.zori.module.misc;
 import club.novola.zori.module.Module;
 import club.novola.zori.util.Wrapper;
 
-public class SwingAnim extends Module {
-    public SwingAnim() {
-        super("SwingAnim", Category.MISC);
+public class swagHit extends Module {
+    public swagHit() {
+        super("swagHit", Category.MISC);
     }
 
     @Override
