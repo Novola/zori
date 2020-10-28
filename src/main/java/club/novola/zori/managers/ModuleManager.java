@@ -32,7 +32,7 @@ public class ModuleManager {
 
 		// register modules here
         new AutoTrap();
-        new KillAura();
+        new Aura();
         new AntiDesync();
         new FastUse();
         new Step();
