@@ -14,7 +14,7 @@ import java.io.IOException;
 @Mod(modid = Zori.MODID, name = Zori.MODNAME, version = Zori.MODVER)
 public class Zori {
     public static final String MODID = "zori";
-    public static final String MODNAME = "Zori";
+    public static final String MODNAME = "trollgod.cc";
     public static final String MODVER = "v0.0.1-BETA";
 
     public Logger log = LogManager.getLogger(MODNAME);
