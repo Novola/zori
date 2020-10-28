@@ -15,9 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 // not finished
-public class intantTrapSelf extends Module {
-    public instantTrapSelf() {
-        super("intantTrapSelf", Category.COMBAT);
+public class SelfTrap extends Module {
+    public SelfTrap() {
+        super("SelfTrap", Category.COMBAT);
     }
 
     private Setting<Boolean> full = register("Full", false);
