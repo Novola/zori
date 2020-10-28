@@ -30,9 +30,9 @@ import java.util.stream.Collectors;
 // modified (old)kami scaffold
 // original surround goes all the way back to apollyon, since then I've changed it quite a bit tho
 // also it's a fuckin mess but I never got around to rewriting it
-public class Surround extends Module {
-    public Surround() {
-        super("Surround", Category.COMBAT);
+public class instantFeetPlace extends Module {
+    public instantFeetPlace() {
+        super("insantFeetPlace", Category.COMBAT);
     }
 
     private List<Block> whiteList = Arrays.asList(Blocks.OBSIDIAN, Blocks.ENDER_CHEST);
