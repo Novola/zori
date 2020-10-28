@@ -33,7 +33,7 @@ public class ModuleManager {
 		// register modules here
         new AutoTrap();
         new Aura();
-        new AntiDesync();
+        new noDesync();
         new FastUse();
         new Step();
         new Chat();
