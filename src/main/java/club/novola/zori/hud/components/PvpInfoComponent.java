@@ -13,7 +13,7 @@ public class PvpInfoComponent extends HudComponent<PvpInfo> {
     @Override
     public void render() {
         super.render();
-        String s = Zori.getInstance().moduleManager.getEnabledColor("AutoCrystal") + "CA  " + Zori.getInstance().moduleManager.getEnabledColor("Surround") + "SU  " + Zori.getInstance().moduleManager.getEnabledColor("AutoTrap") + "AT";
+        String s = Zori.getInstance().moduleManager.getEnabledColor("AutoCrystal") + "instantCrystal  " + Zori.getInstance().moduleManager.getEnabledColor("instantFeetPlace") + "instantFeetPlace  " + Zori.getInstance().moduleManager.getEnabledColor("instantTrap") + "instantTrap";
         Wrapper.getFontRenderer().drawStringWithShadow(s, x, y, -1);
         width = Wrapper.getFontRenderer().getStringWidth(s);
     }
