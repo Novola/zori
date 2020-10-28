@@ -22,9 +22,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 // im not adding comments to this mess
-public class instantTrap extends Module {
-    public instantTrap() {
-        super("instantTrap", Category.COMBAT);
+public class AutoTrap extends Module {
+    public AutoTrap() {
+        super("AutoTrap", Category.COMBAT);
     }
 
     private Setting<Double> range = register("Range", 5.0d, 0.0d, 7.0d); // if you used 5.0, 0.0, 7.0 it would assume those are float numbers and throw an exception
