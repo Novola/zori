@@ -1,2 +1,3 @@
-# zori
-crazy hack developed by bz and I
+# trollgod.cc chimpanzee
+
+crazy hack devved by finz0 + the
