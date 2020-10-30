@@ -29,7 +29,7 @@ public class NoSlowBypass extends Module {
     }
 
     @SubscribeEvent
-    public void onUseItem() {
+    public void onUseItem(LivingEntityUseItemEvent event) {
         if (!sneaking) {
             Wrapper.getPlayer().connection.sendPacket(new CPacketEntityAction(Wrapper.getPlayer(), CPacketEntityAction.Action.START_SNEAKING));
             sneaking = true;
