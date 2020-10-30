@@ -19,7 +19,7 @@ public class ServerComponent extends HudComponent<Server> {
     @Override
     public void render() {
         super.render();
-        Wrapper.getFontRenderer().drawStringWithShadow("Server: " + Wrapper.mc.getCurrentServerData().serverIP, x, y, Zori.getInstance().clientSettings.getColor());
+        Wrapper.getFontRenderer().drawStringWithShadow("Server: " + "\u00A7f" + Wrapper.mc.getCurrentServerData().serverIP, x, y, Zori.getInstance().clientSettings.getColor());
         width = Wrapper.getFontRenderer().getStringWidth(Zori.getInstance().toString());
     }
 }
