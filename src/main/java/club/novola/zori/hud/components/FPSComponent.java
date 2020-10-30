@@ -19,7 +19,7 @@ public class FPSComponent extends HudComponent<FPS> {
     @Override
     public void render() {
         super.render();
-        Wrapper.getFontRenderer().drawStringWithShadow("FPS: " +  Wrapper.mc.getDebugFPS(), x, y, Zori.getInstance().clientSettings.getColor());
+        Wrapper.getFontRenderer().drawStringWithShadow("FPS: " + "\u00A7f" +  Wrapper.mc.getDebugFPS(), x, y, Zori.getInstance().clientSettings.getColor());
         width = Wrapper.getFontRenderer().getStringWidth(Zori.getInstance().toString());
     }
 }
