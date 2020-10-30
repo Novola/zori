@@ -20,7 +20,7 @@ public class TPSComponent extends HudComponent<TPS> {
     @Override
     public void render() {
         super.render();
-        Wrapper.getFontRenderer().drawStringWithShadow("TPS: " +  TickRate.TPS, x, y, Zori.getInstance().clientSettings.getColor());
+        Wrapper.getFontRenderer().drawStringWithShadow("TPS: " + "\u00A7f" + TickRate.TPS, x, y, Zori.getInstance().clientSettings.getColor());
         width = Wrapper.getFontRenderer().getStringWidth(Zori.getInstance().toString());
     }
 }
