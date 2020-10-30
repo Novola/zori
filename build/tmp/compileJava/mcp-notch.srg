@@ -1,0 +1,7 @@
+FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/LOGGER club/novola/zori/mixin/mixins/MixinGuiNewChat/a
+FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/mc club/novola/zori/mixin/mixins/MixinGuiNewChat/f
+FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/drawnChatLines club/novola/zori/mixin/mixins/MixinGuiNewChat/i
+FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/scrollPos club/novola/zori/mixin/mixins/MixinGuiNewChat/j
+FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/isScrolled club/novola/zori/mixin/mixins/MixinGuiNewChat/k
+FD: club/novola/zori/mixin/mixins/MixinRender/renderManager club/novola/zori/mixin/mixins/MixinRender/b
+MD: club/novola/zori/mixin/mixins/MixinGuiNewChat/setChatLine (Lnet/minecraft/util/text/ITextComponent;IIZ)V club/novola/zori/mixin/mixins/MixinGuiNewChat/a (Lhh;IIZ)V

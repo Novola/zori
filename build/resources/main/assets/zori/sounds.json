@@ -1,0 +1,51 @@
+{
+  "godlike":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:godlike", "stream": true
+    }]
+  },
+  "holyshit":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:holyshit", "stream": true
+    }]
+  },
+  "impressive":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:impressive", "stream": true
+    }]
+  },
+  "ownage":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:ownage", "stream": true
+    }]
+  },
+  "perfect":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:perfect", "stream": true
+    }]
+  },
+  "wickedsick":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:wickedsick", "stream": true
+    }]
+  },
+  "skeet":
+  {
+    "category": "entity",
+    "sounds": [{
+      "name": "zori:skeet", "stream": false
+    }]
+  }
+}

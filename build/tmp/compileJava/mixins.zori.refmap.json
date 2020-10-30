@@ -1,0 +1,49 @@
+{
+  "mappings": {
+    "club/novola/zori/mixin/mixins/MixinPlayerControllerMP": {
+      "getBlockReachDistance": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F"
+    },
+    "club/novola/zori/mixin/mixins/MixinRender": {
+      "renderLivingLabel": "Lnet/minecraft/client/renderer/entity/Render;func_147906_a(Lnet/minecraft/entity/Entity;Ljava/lang/String;DDDI)V"
+    },
+    "club/novola/zori/mixin/mixins/MixinGuiNewChat": {
+      "drawChat": "Lnet/minecraft/client/gui/GuiNewChat;func_146230_a(I)V",
+      "printChatMessageWithOptionalDeletion": "Lnet/minecraft/client/gui/GuiNewChat;func_146234_a(Lnet/minecraft/util/text/ITextComponent;I)V"
+    },
+    "club/novola/zori/mixin/mixins/MixinNetworkManager": {
+      "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V"
+    }
+  },
+  "data": {
+    "notch": {
+      "club/novola/zori/mixin/mixins/MixinPlayerControllerMP": {
+        "getBlockReachDistance": "Lbsa;d()F"
+      },
+      "club/novola/zori/mixin/mixins/MixinRender": {
+        "renderLivingLabel": "Lbzg;a(Lvg;Ljava/lang/String;DDDI)V"
+      },
+      "club/novola/zori/mixin/mixins/MixinGuiNewChat": {
+        "drawChat": "Lbjb;a(I)V",
+        "printChatMessageWithOptionalDeletion": "Lbjb;a(Lhh;I)V"
+      },
+      "club/novola/zori/mixin/mixins/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lgw;a(Lht;)V"
+      }
+    },
+    "searge": {
+      "club/novola/zori/mixin/mixins/MixinPlayerControllerMP": {
+        "getBlockReachDistance": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F"
+      },
+      "club/novola/zori/mixin/mixins/MixinRender": {
+        "renderLivingLabel": "Lnet/minecraft/client/renderer/entity/Render;func_147906_a(Lnet/minecraft/entity/Entity;Ljava/lang/String;DDDI)V"
+      },
+      "club/novola/zori/mixin/mixins/MixinGuiNewChat": {
+        "drawChat": "Lnet/minecraft/client/gui/GuiNewChat;func_146230_a(I)V",
+        "printChatMessageWithOptionalDeletion": "Lnet/minecraft/client/gui/GuiNewChat;func_146234_a(Lnet/minecraft/util/text/ITextComponent;I)V"
+      },
+      "club/novola/zori/mixin/mixins/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V"
+      }
+    }
+  }
+}
