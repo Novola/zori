@@ -234,7 +234,24 @@ public class AutoCrystal extends Module {
         Zori.getInstance().rotationManager.reset();
     }
 
-    
+    public boolean canPlaceCrystal(BlockPos blockPos) {
+        BlockPos boost = blockPos.add(0, 1, 0);
+        BlockPos boost2 = blockPos.add(0, 2, 0);
+        if (!oneblock.getValue())
+            return (Wrapper.getWorld().getBlockState(blockPos).getBlock() == Blocks.BEDROCK
+                    || Wrapper.getWorld().getBlockState(blockPos).getBlock() == Blocks.OBSIDIAN)
+                    && Wrapper.getWorld().getBlockState(boost).getBlock() == Blocks.AIR
+                    && Wrapper.getWorld().getBlockState(boost2).getBlock() == Blocks.AIR
+                    && Wrapper.getWorld().getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(boost)).isEmpty()
+                    && Wrapper.getWorld().getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(boost2)).isEmpty();
+        else
+            return (Wrapper.getWorld().getBlockState(blockPos).getBlock() == Blocks.BEDROCK
+                    || Wrapper.getWorld().getBlockState(blockPos).getBlock() == Blocks.OBSIDIAN)
+                    && Wrapper.getWorld().getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(boost)).isEmpty()
+                    && Wrapper.getWorld().getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(boost2)).isEmpty();
+    }
+
+    private BlockPos getPlayerPos() {
         return new BlockPos(Math.floor(Wrapper.getPlayer().posX), Math.floor(Wrapper.getPlayer().posY), Math.floor(Wrapper.getPlayer().posZ));
     }
 
