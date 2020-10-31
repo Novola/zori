@@ -4,4 +4,5 @@ FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/drawnChatLines club/novola/zor
 FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/scrollPos club/novola/zori/mixin/mixins/MixinGuiNewChat/field_146250_j
 FD: club/novola/zori/mixin/mixins/MixinGuiNewChat/isScrolled club/novola/zori/mixin/mixins/MixinGuiNewChat/field_146251_k
 FD: club/novola/zori/mixin/mixins/MixinRender/renderManager club/novola/zori/mixin/mixins/MixinRender/field_76990_c
+MD: club/novola/zori/mixin/mixins/MixinAbstractClientPlayer/getPlayerInfo ()Lnet/minecraft/client/network/NetworkPlayerInfo; club/novola/zori/mixin/mixins/MixinAbstractClientPlayer/func_175155_b ()Lnet/minecraft/client/network/NetworkPlayerInfo;
 MD: club/novola/zori/mixin/mixins/MixinGuiNewChat/setChatLine (Lnet/minecraft/util/text/ITextComponent;IIZ)V club/novola/zori/mixin/mixins/MixinGuiNewChat/func_146237_a (Lnet/minecraft/util/text/ITextComponent;IIZ)V

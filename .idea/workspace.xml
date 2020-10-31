@@ -41,6 +41,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents - 860 Evo\GitHub\zori\src\main\resources\assets\minecraft\textures" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,9 +58,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604018381104">
+    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604106223135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604018381104" />
+    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604106223135" />
   </component>
 </project>

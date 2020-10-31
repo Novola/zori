@@ -6,6 +6,7 @@
   "client": [
     "MixinPlayerControllerMP",
     "MixinNetworkManager",
-    "MixinGuiNewChat"
+    "MixinGuiNewChat",
+    "MixinAbstractClientPlayer"
   ]
 }

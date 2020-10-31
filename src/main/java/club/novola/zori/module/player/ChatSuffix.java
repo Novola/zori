@@ -8,7 +8,7 @@ import net.minecraft.network.play.client.CPacketChatMessage;
 public class ChatSuffix extends Module {
 
     public ChatSuffix() {
-        super("ChatSuffix", Category.PLAYER);
+        super("ChatSuffix (WIP)", Category.PLAYER);
     }
 
     public void packet(final PacketSendEvent event) {

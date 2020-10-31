@@ -70,6 +70,12 @@ public class ModuleManager {
         new VoidESP();
         new CustomTime();
         new CustomFOV();
+        new Capes();
+        new BoatFly();
+        new NoVoid();
+        new PlayerGlow();
+        new NoSlowBypass();
+        new SkyColor();
 
         MinecraftForge.EVENT_BUS.register(this);
     }

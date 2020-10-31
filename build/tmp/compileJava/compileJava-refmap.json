@@ -3,6 +3,9 @@
     "club/novola/zori/mixin/mixins/MixinPlayerControllerMP": {
       "getBlockReachDistance": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F"
     },
+    "club/novola/zori/mixin/mixins/MixinAbstractClientPlayer": {
+      "getLocationCape": "Lnet/minecraft/client/entity/AbstractClientPlayer;func_110303_q()Lnet/minecraft/util/ResourceLocation;"
+    },
     "club/novola/zori/mixin/mixins/MixinRender": {
       "renderLivingLabel": "Lnet/minecraft/client/renderer/entity/Render;func_147906_a(Lnet/minecraft/entity/Entity;Ljava/lang/String;DDDI)V"
     },
@@ -19,6 +22,9 @@
       "club/novola/zori/mixin/mixins/MixinPlayerControllerMP": {
         "getBlockReachDistance": "Lbsa;d()F"
       },
+      "club/novola/zori/mixin/mixins/MixinAbstractClientPlayer": {
+        "getLocationCape": "Lbua;q()Lnf;"
+      },
       "club/novola/zori/mixin/mixins/MixinRender": {
         "renderLivingLabel": "Lbzg;a(Lvg;Ljava/lang/String;DDDI)V"
       },
@@ -33,6 +39,9 @@
     "searge": {
       "club/novola/zori/mixin/mixins/MixinPlayerControllerMP": {
         "getBlockReachDistance": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F"
+      },
+      "club/novola/zori/mixin/mixins/MixinAbstractClientPlayer": {
+        "getLocationCape": "Lnet/minecraft/client/entity/AbstractClientPlayer;func_110303_q()Lnet/minecraft/util/ResourceLocation;"
       },
       "club/novola/zori/mixin/mixins/MixinRender": {
         "renderLivingLabel": "Lnet/minecraft/client/renderer/entity/Render;func_147906_a(Lnet/minecraft/entity/Entity;Ljava/lang/String;DDDI)V"
