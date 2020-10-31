@@ -30,10 +30,12 @@ public class ModuleManager {
 
 		// register modules here
         new AutoTrap();
-        new Aura();
-        new noDesync();
+        new KillAura();
+        new AntiDesync();
         new FastUse();
         new Step();
+        new NoSlowBypass();
+        new NoVoid();
         new Chat();
         new OffhandSwing();
         new FPS();
@@ -68,14 +70,8 @@ public class ModuleManager {
         new FakePlayer();
         new ChatSuffix();
         new VoidESP();
-        new CustomTime();
-        new CustomFOV();
-        new Capes();
-        new BoatFly();
-        new NoVoid();
-        new PlayerGlow();
-        new NoSlowBypass();
         new SkyColor();
+        new CustomTime();
 
         MinecraftForge.EVENT_BUS.register(this);
     }

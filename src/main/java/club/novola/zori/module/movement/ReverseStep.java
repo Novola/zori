@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 
 public class ReverseStep extends Module {
     public ReverseStep() {
-        super("ReverseStep", Category.MISC);
+        super("ReverseStep", Category.MOVEMENT);
     }
 
     public void onUpdate() {
