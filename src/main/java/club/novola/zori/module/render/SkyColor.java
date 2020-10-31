@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package club.novola.zori.module.render;
 
 import club.novola.zori.Zori;
