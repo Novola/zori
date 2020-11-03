@@ -23,6 +23,7 @@ public class HoleESP extends Module {
 
     private HashMap<BlockPos, Boolean> holes = new HashMap<>();
 
+    private Setting<HoleESP.Mode> mode = register("Mode", HoleESP.Mode.FULL);
     private Setting<Integer> range = register("Range", 10, 1, 20);
     private Setting<Integer> ored = register("ObbyRed", 255, 0, 255);
     private Setting<Integer> ogreen = register("ObbyGreen", 0, 0, 255);
@@ -46,8 +47,11 @@ public class HoleESP extends Module {
             holes.forEach((blockPos, isBedrock) -> {
                 if(sync.getValue()){
                     Color c = Zori.getInstance().clientSettings.getColorr(255);
-                    RenderUtils.INSTANCE.drawBoundingBox(blockPos, c.getRed() / 255f, c.getGreen() / 255f, c.getBlue() / 255f, 0.50f, linewidth.getValue());
-                    RenderUtils.INSTANCE.drawBox(blockPos, c.getRed() / 255f, c.getGreen() / 255f, c.getBlue() / 255f, 0.22f);
+
+                    Red = c.getRed();
+                    Green = c.getGreen();
+                    Blue = c.getBlue();
+
                 }else{
                     if(isBedrock){
                         Red = bred.getValue();
@@ -58,8 +62,12 @@ public class HoleESP extends Module {
                         Green = ogreen.getValue();
                         Blue = oblue.getValue();
                     }
+                }
+                if(mode.getValue().equals(HoleESP.Mode.FULL)) {
                     RenderUtils.INSTANCE.drawBoundingBox(blockPos, Red / 255f, Green / 255f, Blue / 255f, 0.50f, linewidth.getValue());
                     RenderUtils.INSTANCE.drawBox(blockPos, Red / 255f, Green / 255f, Blue / 255f, 0.22f);
+                }else if(mode.getValue().equals(HoleESP.Mode.OUTLINE)){
+                    RenderUtils.INSTANCE.drawBoundingBox(blockPos, Red / 255f, Green / 255f, Blue / 255f, 0.50f, linewidth.getValue());
                 }
             });
         }
@@ -90,7 +98,6 @@ public class HoleESP extends Module {
         return Wrapper.getWorld().getBlockState(blockPos).getBlock() == Blocks.OBSIDIAN || Wrapper.getWorld().getBlockState(blockPos).getBlock() == Blocks.ENDER_CHEST;
     }
 
-    //credit: 086
     private void findHoles(){
         if(Wrapper.mc.getRenderViewEntity() == null) return;
 
@@ -113,5 +120,8 @@ public class HoleESP extends Module {
                 }
             }
         }
+    }
+    public enum Mode{
+        FULL, OUTLINE
     }
 }

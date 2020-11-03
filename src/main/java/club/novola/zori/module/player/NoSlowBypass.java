@@ -1,6 +1,5 @@
 package club.novola.zori.module.player;
 
-import club.novola.zori.setting.Setting;
 import club.novola.zori.module.Module;
 import club.novola.zori.util.Wrapper;
 import net.minecraft.item.Item;

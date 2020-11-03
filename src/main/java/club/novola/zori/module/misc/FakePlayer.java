@@ -10,7 +10,7 @@ import java.util.UUID;
 public class FakePlayer extends Module {
 
     public FakePlayer() {
-        super("FakePlayer", Category.RENDER);
+        super("FakePlayer", Category.MISC);
     }
 
     private EntityOtherPlayerMP fake_player;

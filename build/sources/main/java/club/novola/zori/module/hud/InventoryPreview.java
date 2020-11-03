@@ -13,7 +13,6 @@ public class InventoryPreview extends Module {
 
     public Setting<Background> background = register("Background", Background.TRANS);
 
-
     public enum Background{
         NONE, CLEAR, NORMAL, TRANS
     }

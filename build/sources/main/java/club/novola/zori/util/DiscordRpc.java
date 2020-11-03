@@ -30,7 +30,7 @@ public class DiscordRpc {
         presence.details = "";
         presence.state = state;
         presence.largeImageKey = "zori"; // image names you uploaded to the discord dev thing
-        presence.largeImageText = "Zori v0.0.1-beta";
+        presence.largeImageText = "Zori v0.0.2-beta";
         lib.Discord_UpdatePresence(presence);
     }
 

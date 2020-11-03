@@ -1,6 +1,5 @@
 package club.novola.zori.module.player;
 
-import club.novola.zori.command.Command;
 import club.novola.zori.event.PacketSendEvent;
 import club.novola.zori.module.Module;
 import net.minecraft.network.play.client.CPacketChatMessage;

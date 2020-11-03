@@ -8,7 +8,7 @@ import club.novola.zori.util.Wrapper;
 
 public class TPSComponent extends HudComponent<TPS> {
     public TPSComponent() {
-        super("FPS", 2, 2, TPS.INSTANCE);
+        super("TPS", 2, 2, TPS.INSTANCE);
     }
 
     @Override

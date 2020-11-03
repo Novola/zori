@@ -3,6 +3,7 @@ package club.novola.zori.module.movement;
 import club.novola.zori.setting.Setting;
 import club.novola.zori.module.Module;
 import club.novola.zori.util.Wrapper;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.play.client.CPacketPlayer;
 import net.minecraft.util.math.AxisAlignedBB;

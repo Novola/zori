@@ -4,6 +4,7 @@ import club.novola.zori.module.client.*;
 import club.novola.zori.module.combat.*;
 import club.novola.zori.module.hud.*;
 import club.novola.zori.module.misc.*;
+import club.novola.zori.module.misc.ReverseStep;
 import club.novola.zori.module.movement.*;
 import club.novola.zori.module.player.*;
 import club.novola.zori.module.render.*;
@@ -34,6 +35,8 @@ public class ModuleManager {
         new noDesync();
         new FastUse();
         new Step();
+        new NoSlowBypass();
+        new NoVoid();
         new Chat();
         new OffhandSwing();
         new FPS();
@@ -68,14 +71,14 @@ public class ModuleManager {
         new FakePlayer();
         new ChatSuffix();
         new VoidESP();
-        new CustomTime();
-        new CustomFOV();
-        new Capes();
-        new BoatFly();
-        new NoVoid();
-        new PlayerGlow();
-        new NoSlowBypass();
         new SkyColor();
+        new NoSlowBypass();
+        new CustomTime();
+        new Jesus();
+        new CustomFOV();
+        new PlayerViewer();
+        new Totems();
+        new ArmorHUD();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
