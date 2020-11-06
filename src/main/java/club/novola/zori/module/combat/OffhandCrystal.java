@@ -33,13 +33,16 @@ public class OffhandCrystal extends Module {
     public void onEnable() {
         if(disableOthers.getValue()){
             AutoTotem autoTotem = (AutoTotem) Zori.getInstance().moduleManager.getModuleByName("AutoTotem");
+            OffhandGap offhandGap = (OffhandGap) Zori.getInstance().moduleManager.getModuleByName("OffhandGap");
             if(autoTotem.isEnabled()) autoTotem.disable();
-            //if(offhandGapple.isEnabled()) offhandGapple.disable()
+            if(offhandGap.isEnabled()) offhandGap.disable();
         }
     }
 
     public void onDisable() {
-        if(totemOnDisable.getValue()) MinecraftForge.EVENT_BUS.register(this);
+        AutoTotem autoTotem = (AutoTotem) Zori.getInstance().moduleManager.getModuleByName("AutoTotem");
+        if(totemOnDisable.getValue());
+        autoTotem.enable();
     }
 
 	// called every tick even if the module is disabled
