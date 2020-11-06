@@ -1,8 +1,12 @@
 package club.novola.zori.module;
 
 import club.novola.zori.Zori;
+import club.novola.zori.command.Command;
 import club.novola.zori.managers.ModuleManager;
+import club.novola.zori.module.combat.AutoTotem;
+import club.novola.zori.module.misc.ToggleMsg;
 import club.novola.zori.setting.Setting;
+import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraftforge.common.MinecraftForge;
 
 public abstract class Module {
@@ -61,14 +65,16 @@ public abstract class Module {
 
     public void enable(){
         enabled = true;
+        Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
         MinecraftForge.EVENT_BUS.register(this);
         Zori.getInstance().moduleManager.getEnabledModules().remove(this);
         Zori.getInstance().moduleManager.getEnabledModules().add(this);
         onEnable();
     }
-
+    
     public void disable(){
         enabled = false;
+        Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
         MinecraftForge.EVENT_BUS.unregister(this);
         Zori.getInstance().moduleManager.getEnabledModules().remove(this);
         onDisable();
