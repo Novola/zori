@@ -40,7 +40,9 @@ public class OffhandGap extends Module {
     }
 
     public void onDisable() {
-        if(totemOnDisable.getValue()) MinecraftForge.EVENT_BUS.register(this);
+        AutoTotem autoTotem = (AutoTotem) Zori.getInstance().moduleManager.getModuleByName("AutoTotem");
+        if (totemOnDisable.getValue()) ;
+        autoTotem.enable();
     }
 
 	// called every tick even if the module is disabled
