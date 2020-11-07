@@ -61,7 +61,6 @@ public class AutoCrystal extends Module {
     private Setting<Double> maxSelfDmg = register("MaxSelfDmg", 6.0d, 0.0d, 20.0d);
     private Setting<Double> enemyRange = register("EnemyRange", 10.0d, 0.0d, 20.0d);
 
-    private Setting<Boolean> toggleMsgs = register("ToggleMsgs", true);
     private Setting<Integer> espAlpha = register("EspAlpha", 50, 0, 255);
 
     private int tickCounter = 0;
@@ -261,11 +260,14 @@ public class AutoCrystal extends Module {
         target = null;
         lastTarget = null;
         isActive = false;
+<<<<<<< Updated upstream
         placedCrystals = new ArrayList<>();
         interacted = new ArrayList<>();
 
         if(toggleMsgs.getValue())
             Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
+=======
+>>>>>>> Stashed changes
     }
 
     @Override
@@ -281,11 +283,14 @@ public class AutoCrystal extends Module {
         target = null;
         lastTarget = null;
         isActive = false;
+<<<<<<< Updated upstream
         placedCrystals = new ArrayList<>();
         interacted = new ArrayList<>();
 
         if(toggleMsgs.getValue())
             Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
+=======
+>>>>>>> Stashed changes
     }
 
     private boolean isValid(EntityEnderCrystal crystal){

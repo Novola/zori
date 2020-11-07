@@ -6,6 +6,9 @@ import club.novola.zori.util.Wrapper;
 import org.lwjgl.input.Keyboard;
 
 public class ClickGuiModule extends Module {
+
+    public static boolean enabledGui = false;
+
     public ClickGuiModule() {
         super("ClickGUI", Category.HUD);
         setBind(Keyboard.KEY_P);
@@ -13,6 +16,8 @@ public class ClickGuiModule extends Module {
 
     @Override
     public void onEnable(){
+        this.enabledGui = true;
+
         if(Wrapper.mc.currentScreen != null)
             Wrapper.mc.displayGuiScreen(null);
 

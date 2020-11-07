@@ -14,7 +14,13 @@ public class ChatSuffix extends Module {
     @SubscribeEvent
     public void onChat(ClientChatEvent event) {
         String ZoriChat = " \u23d0 \u1d22\u1d0f\u0280\u026a"; //Chat Suffix
+<<<<<<< Updated upstream
         if (event.getMessage().startsWith("/")) return;
+=======
+        if (event.getMessage().startsWith("/") || event.getMessage().startsWith(".")
+                || event.getMessage().startsWith(",") || event.getMessage().startsWith("-")
+                || event.getMessage().startsWith("$") || event.getMessage().startsWith("*")) return;
+>>>>>>> Stashed changes
         event.setMessage(event.getMessage() + ZoriChat); // Adds the suffix to the end of the message
     }
 }

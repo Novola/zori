@@ -1,8 +1,10 @@
 package club.novola.zori.module.movement;
 
+import club.novola.zori.command.Command;
 import club.novola.zori.module.Module;
 import club.novola.zori.setting.Setting;
 import club.novola.zori.util.Wrapper;
+import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.BlockPos;

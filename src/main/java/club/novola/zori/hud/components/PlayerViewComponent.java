@@ -26,9 +26,6 @@ public class PlayerViewComponent extends HudComponent<PlayerViewer> {
         if (Wrapper.mc.player == null) {
             return;
         }
-        if (Wrapper.mc.gameSettings.thirdPersonView != 0) {
-            return;
-        }
         GlStateManager.pushMatrix();
         GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
         this.drawPlayer((EntityPlayer) Wrapper.mc.player, (int)this.x, (int)this.y);

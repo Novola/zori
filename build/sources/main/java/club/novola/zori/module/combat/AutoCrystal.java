@@ -54,7 +54,6 @@ public class AutoCrystal extends Module {
     private Setting<Double> facePlaceHp = register("FacePlaceHP", 8.0d, 0.0d, 20.0d);
     private Setting<Double> maxSelfDmg = register("MaxSelfDmg", 6.0d, 0.0d, 20.0d);
 
-    private Setting<Boolean> toggleMsgs = register("ToggleMsgs", true);
     private Setting<Integer> espAlpha = register("EspAlpha", 50, 0, 255);
 
     private int hitCounter = 0; // hit counter for tick delay
@@ -196,9 +195,6 @@ public class AutoCrystal extends Module {
         possibleTarget = null;
         target = null;
         isActive = false;
-
-        if(toggleMsgs.getValue())
-            Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
     }
 
     @Override
@@ -213,9 +209,6 @@ public class AutoCrystal extends Module {
         possibleTarget = null;
         target = null;
         isActive = false;
-
-        if(toggleMsgs.getValue())
-            Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
     }
 
     private boolean isEatingGap(){

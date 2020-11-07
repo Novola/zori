@@ -3,11 +3,7 @@ package club.novola.zori.module.movement;
 import club.novola.zori.module.Module;
 import club.novola.zori.util.Wrapper;
 
-import java.text.DecimalFormat;
-
 public class BoatFly extends Module {
-
-    private final DecimalFormat decimalFormat = new DecimalFormat("##.#");
 
     public BoatFly() {
         super("BoatFly", Category.MOVEMENT);

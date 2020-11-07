@@ -3,6 +3,7 @@ package club.novola.zori.gui;
 import club.novola.zori.Zori;
 import club.novola.zori.hud.HudComponent;
 import club.novola.zori.module.Module;
+import club.novola.zori.module.hud.ClickGuiModule;
 import net.minecraft.client.gui.GuiScreen;
 
 import java.io.IOException;
@@ -107,6 +108,8 @@ public class ClickGUI extends GuiScreen {
             c.onGuiClosed();
         }
         super.onGuiClosed();
+
+        ClickGuiModule.enabledGui = false;
     }
 
     /**

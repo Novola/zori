@@ -29,56 +29,71 @@ public class ModuleManager {
         enabledModules = new ArrayList<>();
         modules = new HashMap<>();
 
-		// register modules here
+		// CLIENT
+        new Colors();
+        new Settings();
+
+        // COMBAT
         new AutoTrap();
         new Aura();
         new noDesync();
-        new FastUse();
-        new Step();
-        new NoSlowBypass();
-        new NoVoid();
-        new Chat();
-        new OffhandSwing();
-        new FPS();
-        new Welcomer();
-        new SwingAnim();
-        new HoleESP();
-        new ArmorWarning();
+        new AutoCrystal();
         new OffhandCrystal();
         new OffhandGap();
         new AutoTotem();
         new Surround();
         new SecretClose();
-        new SoundEffects();
-        new NoRender();
-        new TPS();
-        new DiscordRpcModule();
-        new Players();
-        new BlockHighlight();
         new Reach();
-        new AutoCrystal();
+
+        // HUD
+        new FPS();
+        new Welcomer();
+        new ArmorWarning();
+        new TPS();
+        new Players();
         new InventoryPreview();
-        new HoleStep();
-        new ReverseStep();
+        new ClickGuiModule();
         new OffhandMode();
         new Server();
         new PvpInfo();
         new Watermark();
-        new ClickGuiModule();
-        new Sprint();
-        new Colors();
-        new Settings();
-        new FakePlayer();
-        new ChatSuffix();
-        new VoidESP();
-        new SkyColor();
-        new NoSlowBypass();
-        new CustomTime();
-        new Jesus();
-        new CustomFOV();
         new PlayerViewer();
         new Totems();
         new ArmorHUD();
+
+        // MISC
+        new Chat();
+        new DiscordRpcModule();
+        new FakePlayer();
+        new SoundEffects();
+
+        // MOVEMENT
+        new BoatFly();
+        new Step();
+        new HoleStep();
+        new ReverseStep();
+        new Sprint();
+        new Jesus();
+
+        // PLAYER
+        new ChatSuffix();
+        new FastUse();
+        new NoSlowBypass();
+        new NoVoid();
+
+        // RENDER
+        new OffhandSwing();
+        new SwingAnim();
+        new HoleESP();
+        new NoRender();
+        new BlockHighlight();
+        new VoidESP();
+        new SkyColor();
+        new CustomTime();
+        new CustomFOV();
+        new PlayerGlow();
+        new ShaderLoader();
+        new GUIBlur();
 
         MinecraftForge.EVENT_BUS.register(this);
     }

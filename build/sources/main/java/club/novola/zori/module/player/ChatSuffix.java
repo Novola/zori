@@ -1,30 +1,21 @@
 package club.novola.zori.module.player;
 
-import club.novola.zori.event.PacketSendEvent;
 import club.novola.zori.module.Module;
-import net.minecraft.network.play.client.CPacketChatMessage;
+import net.minecraftforge.client.event.ClientChatEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class ChatSuffix extends Module {
 
     public ChatSuffix() {
-        super("ChatSuffix (WIP)", Category.PLAYER);
+        super("ChatSuffix", Category.PLAYER);
     }
 
-    public void packet(final PacketSendEvent event) {
-        if (event.getPacket() instanceof CPacketChatMessage) {
-            if (((CPacketChatMessage)event.getPacket()).getMessage().startsWith("/") ||
-                    ((CPacketChatMessage)event.getPacket()).getMessage().startsWith(",") ||
-                    ((CPacketChatMessage)event.getPacket()).getMessage().startsWith(".")||
-                    ((CPacketChatMessage)event.getPacket()).getMessage().startsWith("-")||
-                    ((CPacketChatMessage)event.getPacket()).getMessage().startsWith("$")) {
-                return;
-            }
-            final String old = ((CPacketChatMessage)event.getPacket()).getMessage();
-            final String suffix = " \u23d0 ";
-            String s = old + suffix;
-            if (s.length() > 255) {
-                return;
-            }
-        }
+    @SubscribeEvent
+    public void onChat(ClientChatEvent event) {
+        String ZoriChat = " \u23d0 \u1d22\u1d0f\u0280\u026a"; //Chat Suffix
+        if (event.getMessage().startsWith("/") || event.getMessage().startsWith(".")
+                || event.getMessage().startsWith(",") || event.getMessage().startsWith("-")
+                || event.getMessage().startsWith("$") || event.getMessage().startsWith("*")) return;
+        event.setMessage(event.getMessage() + ZoriChat); // Adds the suffix to the end of the message
     }
 }

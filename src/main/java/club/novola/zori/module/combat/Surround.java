@@ -1,11 +1,16 @@
 package club.novola.zori.module.combat;
 
+import club.novola.zori.command.Command;
+import club.novola.zori.mixin.accessors.IMinecraft;
 import club.novola.zori.setting.Setting;
 import club.novola.zori.Zori;
 import club.novola.zori.module.Module;
+import club.novola.zori.util.BlockInteractionHelper;
 import club.novola.zori.util.Wrapper;
+import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.PlayerControllerMP;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
@@ -202,40 +207,17 @@ public class Surround extends Module {
     }
 
     public static boolean placeBlockScaffold(BlockPos pos, boolean rotate) {
-        //Vec3d eyesPos = new Vec3d(mc.player.posX,
-        //        mc.player.posY + mc.player.getEyeHeight(),
-        //        mc.player.posZ);
-
         for(EnumFacing side : EnumFacing.values())
         {
             BlockPos neighbor = pos.offset(side);
             EnumFacing side2 = side.getOpposite();
-
-            // check if side is visible (facing away from player)
-            //if(eyesPos.squareDistanceTo(
-            //        new Vec3d(pos).add(0.5, 0.5, 0.5)) >= eyesPos
-            //        .squareDistanceTo(
-            //                new Vec3d(neighbor).add(0.5, 0.5, 0.5)))
-            //    continue;
-
-            // check if neighbor can be right clicked
             if(!canBeClicked(neighbor))
                 continue;
-
             Vec3d hitVec = new Vec3d(neighbor).addVector(0.5, 0.5, 0.5)
                     .add(new Vec3d(side2.getDirectionVec()).scale(0.5));
-
-            // check if hitVec is within range (4.25 blocks)
-            //if(eyesPos.squareDistanceTo(hitVec) > 18.0625)
-            //continue;
-
-            // place block
-            //if(rotate) faceVectorPacketInstant(hitVec);
             if(rotate) Zori.getInstance().rotationManager.rotate(hitVec.x, hitVec.y, hitVec.z);
             Wrapper.mc.player.connection.sendPacket(new CPacketEntityAction(Wrapper.mc.player, CPacketEntityAction.Action.START_SNEAKING));
-            //Wrapper.mc.rightClickDelayTimer = 0;
             processRightClickBlock(neighbor, side2, hitVec);
-            //mc.player.connection.sendPacket(new CPacketPlayerTryUseItemOnBlock(neighbor, side2, EnumHand.MAIN_HAND, 0, 0, 0));
             Wrapper.mc.player.swingArm(EnumHand.MAIN_HAND);
             Wrapper.mc.player.connection.sendPacket(new CPacketEntityAction(Wrapper.mc.player, CPacketEntityAction.Action.STOP_SNEAKING));
             if(rotate) Zori.getInstance().rotationManager.reset();
