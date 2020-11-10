@@ -1,5 +1,6 @@
 package club.novola.zori;
 
+import club.novola.zori.capes.CapeUtil;
 import club.novola.zori.gui.ClickGUI;
 import club.novola.zori.managers.*;
 import club.novola.zori.util.*;
@@ -15,7 +16,7 @@ import java.io.IOException;
 public class Zori {
     public static final String MODID = "zori";
     public static final String MODNAME = "Zori";
-    public static final String MODVER = "v0.0.1-BETA";
+    public static final String MODVER = "v0.0.4-BETA";
 
     public Logger log = LogManager.getLogger(MODNAME);
 
@@ -52,6 +53,7 @@ public class Zori {
         new EntityUtils();
         new KillEventHelper();
         Config config = new Config();
+        CapeUtil.getUsersCape();
 
 		// load config
         try {

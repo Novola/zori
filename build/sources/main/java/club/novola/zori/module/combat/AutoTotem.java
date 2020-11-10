@@ -28,8 +28,9 @@ public class AutoTotem extends Module {
     public void onEnable() {
         if(disableOthers.getValue()){
             OffhandCrystal offhandCrystal = (OffhandCrystal) Zori.getInstance().moduleManager.getModuleByName("OffhandCrystal");
+            OffhandGap offhandGap = (OffhandGap) Zori.getInstance().moduleManager.getModuleByName("OffhandGap");
             if(offhandCrystal.isEnabled()) offhandCrystal.disable();
-            //if(offhandGapple.isEnabled()) offhandGapple.disable();
+            if(offhandGap.isEnabled()) offhandGap.disable();
         }
     }
 

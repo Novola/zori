@@ -1,6 +1,7 @@
 package club.novola.zori.managers;
 
 import club.novola.zori.module.client.*;
+import club.novola.zori.module.client.Capes;
 import club.novola.zori.module.combat.*;
 import club.novola.zori.module.hud.*;
 import club.novola.zori.module.misc.*;
@@ -32,6 +33,7 @@ public class ModuleManager {
 		// CLIENT
         new Colors();
         new Settings();
+        new Capes();
 
         // COMBAT
         new AutoTrap();
@@ -66,6 +68,9 @@ public class ModuleManager {
         new DiscordRpcModule();
         new FakePlayer();
         new SoundEffects();
+        new GreenText();
+        new AirPlace();
+        new BlockPlaceTest();
 
         // MOVEMENT
         new BoatFly();
@@ -77,9 +82,11 @@ public class ModuleManager {
 
         // PLAYER
         new ChatSuffix();
-        new FastUse();
+        new FastXP();
         new NoSlowBypass();
         new NoVoid();
+        new AntiInteract();
+        new AutoRespawn();
 
         // RENDER
         new OffhandSwing();
@@ -94,6 +101,7 @@ public class ModuleManager {
         new PlayerGlow();
         new ShaderLoader();
         new GUIBlur();
+        new PlayerESP();
 
         MinecraftForge.EVENT_BUS.register(this);
     }

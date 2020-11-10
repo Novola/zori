@@ -4,6 +4,7 @@ import club.novola.zori.module.Module;
 import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+//idk why this wasnt made quicker but hey
 public class ChatSuffix extends Module {
 
     public ChatSuffix() {

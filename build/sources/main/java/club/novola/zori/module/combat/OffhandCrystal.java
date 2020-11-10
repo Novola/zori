@@ -1,11 +1,9 @@
 package club.novola.zori.module.combat;
 
-import club.novola.zori.command.Command;
 import club.novola.zori.setting.Setting;
 import club.novola.zori.Zori;
 import club.novola.zori.module.Module;
 import club.novola.zori.util.Wrapper;
-import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.init.Items;
@@ -35,13 +33,16 @@ public class OffhandCrystal extends Module {
     public void onEnable() {
         if(disableOthers.getValue()){
             AutoTotem autoTotem = (AutoTotem) Zori.getInstance().moduleManager.getModuleByName("AutoTotem");
+            OffhandGap offhandGap = (OffhandGap) Zori.getInstance().moduleManager.getModuleByName("OffhandGap");
             if(autoTotem.isEnabled()) autoTotem.disable();
-            //if(offhandGapple.isEnabled()) offhandGapple.disable()
+            if(offhandGap.isEnabled()) offhandGap.disable();
         }
     }
 
     public void onDisable() {
-        if(totemOnDisable.getValue()) MinecraftForge.EVENT_BUS.register(this);
+        AutoTotem autoTotem = (AutoTotem) Zori.getInstance().moduleManager.getModuleByName("AutoTotem");
+        if(totemOnDisable.getValue());
+        autoTotem.enable();
     }
 
 	// called every tick even if the module is disabled

@@ -3,12 +3,7 @@ package club.novola.zori.module;
 import club.novola.zori.Zori;
 import club.novola.zori.command.Command;
 import club.novola.zori.managers.ModuleManager;
-<<<<<<< Updated upstream
-import club.novola.zori.module.combat.AutoTotem;
-import club.novola.zori.module.misc.ToggleMsg;
-=======
 import club.novola.zori.module.client.Settings;
->>>>>>> Stashed changes
 import club.novola.zori.setting.Setting;
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraftforge.common.MinecraftForge;
@@ -69,13 +64,10 @@ public abstract class Module {
 
     public void enable(){
         enabled = true;
-<<<<<<< Updated upstream
         Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
-=======
         if(Settings.togglemsgs) {
             Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
         }
->>>>>>> Stashed changes
         MinecraftForge.EVENT_BUS.register(this);
         Zori.getInstance().moduleManager.getEnabledModules().remove(this);
         Zori.getInstance().moduleManager.getEnabledModules().add(this);
@@ -84,13 +76,10 @@ public abstract class Module {
     
     public void disable(){
         enabled = false;
-<<<<<<< Updated upstream
         Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
-=======
         if(Settings.togglemsgs) {
             Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
         }
->>>>>>> Stashed changes
         MinecraftForge.EVENT_BUS.unregister(this);
         Zori.getInstance().moduleManager.getEnabledModules().remove(this);
         onDisable();

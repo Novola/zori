@@ -1,7 +1,6 @@
 package club.novola.zori.managers;
 
-import club.novola.zori.command.commands.StatusCommand;
-import club.novola.zori.command.commands.ToggleCommand;
+import club.novola.zori.command.commands.*;
 import com.google.common.collect.Lists;
 import club.novola.zori.Zori;
 import club.novola.zori.command.Command;

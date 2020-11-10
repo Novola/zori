@@ -260,14 +260,8 @@ public class AutoCrystal extends Module {
         target = null;
         lastTarget = null;
         isActive = false;
-<<<<<<< Updated upstream
         placedCrystals = new ArrayList<>();
         interacted = new ArrayList<>();
-
-        if(toggleMsgs.getValue())
-            Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
-=======
->>>>>>> Stashed changes
     }
 
     @Override
@@ -283,14 +277,8 @@ public class AutoCrystal extends Module {
         target = null;
         lastTarget = null;
         isActive = false;
-<<<<<<< Updated upstream
         placedCrystals = new ArrayList<>();
         interacted = new ArrayList<>();
-
-        if(toggleMsgs.getValue())
-            Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
-=======
->>>>>>> Stashed changes
     }
 
     private boolean isValid(EntityEnderCrystal crystal){

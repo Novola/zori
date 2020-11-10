@@ -2,9 +2,16 @@ package club.novola.zori.util;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.monster.EntityIronGolem;
+import net.minecraft.entity.passive.EntityAmbientCreature;
+import net.minecraft.entity.passive.EntitySquid;
+import net.minecraft.entity.passive.EntityTameable;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.Vec3d;
 
+import java.awt.*;
 import java.text.DecimalFormat;
 
 public class EntityUtils {
@@ -45,5 +52,26 @@ public class EntityUtils {
         else if(hp >= 17 && hp <= 19) cf = ChatFormatting.DARK_GREEN; // 16 - 19 = dark green
         else if(hp >= 20) cf = ChatFormatting.GREEN; // 20+ = green
         return cf + new DecimalFormat("00").format(hp); // change the decimal format to get a decimal number e.g. "0.##"
+    }
+
+    public Color getColoredHPB(EntityPlayer player){
+        int hp = (int) (player.getHealth() + player.getAbsorptionAmount());
+        Color c = Color.RED;
+        if(hp >= 6 && hp <= 8){
+            c = Color.RED;
+        }
+        else if(hp >= 9 && hp <= 12){
+            c = Color.ORANGE;
+        }
+        else if(hp >= 13 && hp <= 16){
+            c = Color.YELLOW;
+        }
+        else if(hp >= 17 && hp <= 19){
+            c = Color.GREEN;
+        }
+        else if(hp >= 20){
+            c = Color.GREEN;
+        }
+        return c;
     }
 }

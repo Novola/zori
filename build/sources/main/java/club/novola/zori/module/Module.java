@@ -64,6 +64,7 @@ public abstract class Module {
 
     public void enable(){
         enabled = true;
+        Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
         if(Settings.togglemsgs) {
             Command.sendClientMessage(getName() + ChatFormatting.GREEN + " ON", false);
         }
@@ -72,9 +73,10 @@ public abstract class Module {
         Zori.getInstance().moduleManager.getEnabledModules().add(this);
         onEnable();
     }
-
+    
     public void disable(){
         enabled = false;
+        Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
         if(Settings.togglemsgs) {
             Command.sendClientMessage(getName() + ChatFormatting.RED + " OFF", false);
         }
