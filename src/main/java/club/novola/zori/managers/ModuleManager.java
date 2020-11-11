@@ -71,6 +71,7 @@ public class ModuleManager {
         new GreenText();
         new AirPlace();
         new BlockPlaceTest();
+        new DonkeyFinder();
 
         // MOVEMENT
         new BoatFly();
@@ -85,7 +86,6 @@ public class ModuleManager {
         new FastXP();
         new NoSlowBypass();
         new NoVoid();
-        new AntiInteract();
         new AutoRespawn();
 
         // RENDER

@@ -18,7 +18,8 @@ public class PlayerESP extends Module {
         for(EntityPlayer player : Wrapper.getWorld().playerEntities){
             if(player != Wrapper.getPlayer()){
                 Color c = EntityUtils.INSTANCE.getColoredHPB(player);
-                RenderUtils.INSTANCE.drawBox(player.getPosition(), c.getRed() / 255, c.getGreen() / 255, c.getBlue() / 255, 0.22f);
+                RenderUtils.INSTANCE.drawBoundingBox(player.getRenderBoundingBox(), c.getRed() / 255, c.getGreen() / 255, c.getBlue() / 255, 1f, 1f);
+                //RenderUtils.INSTANCE.drawBox(player.getPosition(), c.getRed() / 255, c.getGreen() / 255, c.getBlue() / 255, 0.22f);
             }
         }
     }
