@@ -21,6 +21,7 @@ import org.lwjgl.input.Keyboard;
 
 import javax.annotation.Nullable;
 import java.util.*;
+import java.util.ArrayList;
 
 public class ModuleManager {
     private static HashMap<String, Module> modules;
@@ -34,18 +35,18 @@ public class ModuleManager {
         new Colors();
         new Settings();
         new Capes();
+        new Arraylist();
 
         // COMBAT
         new AutoTrap();
         new Aura();
         new noDesync();
         new AutoCrystal();
-        new OffhandCrystal();
-        new OffhandGap();
-        new AutoTotem();
         new Surround();
         new SecretClose();
         new Reach();
+        new AutoCrystalTwo();
+        new Offhand();
 
         // HUD
         new FPS();
@@ -62,6 +63,7 @@ public class ModuleManager {
         new PlayerViewer();
         new Totems();
         new ArmorHUD();
+        new Logo();
 
         // MISC
         new Chat();
@@ -72,6 +74,7 @@ public class ModuleManager {
         new AirPlace();
         new BlockPlaceTest();
         new DonkeyFinder();
+        new W0M3NMode();
 
         // MOVEMENT
         new BoatFly();
@@ -123,7 +126,7 @@ public class ModuleManager {
         return modules;
     }
 
-    public List<Module> getEnabledModules(){
+    public static List<Module> getEnabledModules(){
         return enabledModules;
     }
 

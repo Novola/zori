@@ -15,6 +15,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="zori" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -39,11 +56,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents - 860 Evo\GitHub\zori\src\main\resources\assets\zori\logos" />
+      <recent name="D:\Documents - 860 Evo\GitHub\zori\src\main\resources\assets\zori\logo" />
       <recent name="D:\Documents - 860 Evo\GitHub\zori\src\main\resources\assets\shaders\post" />
       <recent name="D:\Documents - 860 Evo\GitHub\zori\src\main\resources\assets\shaders\program" />
       <recent name="D:\Documents - 860 Evo\GitHub\zori\src\main\resources\assets\minecraft\textures" />
@@ -69,17 +88,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="319" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604625978661" />
-    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605063522415">
+    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605657045071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605063522415" />
-    <state x="422" y="166" key="SettingsEditor" timestamp="1604454638279">
+    <state x="690" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605657045071" />
+    <state x="422" y="166" key="SettingsEditor" timestamp="1605144081746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="422" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604454638279" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604970779407">
+    <state x="422" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605144081746" />
+    <state x="800" y="274" key="refactoring.ChangeSignatureDialog" timestamp="1605153174879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604970779407" />
+    <state x="800" y="274" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605153174879" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605579029414">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605579029414" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605392527506">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605392527506" />
   </component>
 </project>

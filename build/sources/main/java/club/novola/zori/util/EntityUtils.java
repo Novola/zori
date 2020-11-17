@@ -2,13 +2,8 @@ package club.novola.zori.util;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.monster.EntityIronGolem;
-import net.minecraft.entity.passive.EntityAmbientCreature;
-import net.minecraft.entity.passive.EntitySquid;
-import net.minecraft.entity.passive.EntityTameable;
-import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.math.Vec3d;
 
 import java.awt.*;
@@ -22,7 +17,7 @@ public class EntityUtils {
 
     public static EntityUtils INSTANCE;
 
-    public Vec3d getInterpolatedPos(Entity entity, double ticks){
+    public static Vec3d getInterpolatedPos(Entity entity, double ticks){
         double d1 = entity.lastTickPosX + ((entity.posX - entity.lastTickPosX) * ticks);
         double d2 = entity.lastTickPosY + ((entity.posY - entity.lastTickPosY) * ticks);
         double d3 = entity.lastTickPosZ + ((entity.posZ - entity.lastTickPosZ) * ticks);

@@ -29,7 +29,9 @@ public class HudComponentManager {
                 new ArmorWarningComponent(),
 				new PlayerViewComponent(),
                 new TotemsComponent(),
-				new ArmorHUDComponent()
+				new ArmorHUDComponent(),
+				new ArrayListComponent(),
+				new LogoComponent()
 				// register hud components here
         );
         MinecraftForge.EVENT_BUS.register(this);

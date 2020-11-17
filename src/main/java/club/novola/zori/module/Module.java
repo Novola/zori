@@ -13,6 +13,7 @@ public abstract class Module {
     private final Category category;
     private int bind;
     private boolean enabled;
+    private Setting<Boolean> drawn;
     private Setting<BindBehaviour> bindBehaviour;
 
     public Module(String name, Category category){
@@ -21,6 +22,7 @@ public abstract class Module {
         this.bind = 0; // 0 = none
         this.enabled = false;
         bindBehaviour = register("BindMode", BindBehaviour.TOGGLE);
+        drawn = register("Drawn", true);
         ModuleManager.register(this, name);
     }
 
@@ -89,6 +91,10 @@ public abstract class Module {
         if(isEnabled()) disable();
         else enable();
         return isEnabled();
+    }
+
+    public Boolean getDrawnBool(){
+        return drawn.getValue();
     }
 
     public BindBehaviour getBindBehaviour(){

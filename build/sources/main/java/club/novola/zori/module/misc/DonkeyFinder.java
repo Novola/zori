@@ -23,15 +23,15 @@ public class DonkeyFinder extends Module {
             for (final Entity e : Wrapper.mc.world.loadedEntityList) {
                 if (e instanceof EntityDonkey && timer >= 100) {
                     Command.sendClientMessage(ChatFormatting.GREEN + " Found Donkey! X:" + (int) e.posX + " Z:" + (int) e.posZ, true);
-                    timer = -300;
+                    timer = -150;
                 }
                 if (e instanceof EntityMule && timer >= 100) {
                     Command.sendClientMessage(ChatFormatting.GREEN + " Found Mule! X:" + (int) e.posX + " Z:" + (int) e.posZ, true);
-                    timer = -300;
+                    timer = -150;
                 }
                 if (e instanceof EntityLlama && timer >= 100) {
                     Command.sendClientMessage(ChatFormatting.GREEN + " Found Llama! X:" + (int) e.posX + " Z:" + (int) e.posZ, true);
-                    timer = -300;
+                    timer = -150;
                 }
             }
         }

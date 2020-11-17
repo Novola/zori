@@ -1,8 +1,6 @@
 package club.novola.zori.module.combat;
 
-import com.mojang.realmsclient.gui.ChatFormatting;
 import club.novola.zori.Zori;
-import club.novola.zori.command.Command;
 import club.novola.zori.event.PacketSendEvent;
 import club.novola.zori.module.Module;
 import club.novola.zori.util.KillEventHelper;
@@ -28,14 +26,20 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.Explosion;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class AutoCrystal extends Module {
+public class AutoCrystal extends Module {// made a second CA (AutoCrystalTwo) so we can experiment without fucking it up too bad
     public AutoCrystal() {
         super("AutoCrystal", Category.COMBAT);
     }
+
+    public int Red;
+    public int Green;
+    public int Blue;
 
     boolean isActive = false;
 
@@ -61,7 +65,12 @@ public class AutoCrystal extends Module {
     private Setting<Double> maxSelfDmg = register("MaxSelfDmg", 6.0d, 0.0d, 20.0d);
     private Setting<Double> enemyRange = register("EnemyRange", 10.0d, 0.0d, 20.0d);
 
-    private Setting<Integer> espAlpha = register("EspAlpha", 50, 0, 255);
+    private Setting<AutoCrystal.RenderMode> renderMode = register("Render Mode", AutoCrystal.RenderMode.FULL);
+    private Setting<Integer> red = register("ESP Red", 255, 0, 255);
+    private Setting<Integer> green = register("ESP Green", 0, 0, 255);
+    private Setting<Integer> blue = register("ESP Blue", 0, 0, 255);
+    private Setting<Integer> linewidth = register("LineWidth", 1, 1, 10);
+    private Setting<Boolean> sync = register("Sync", false);
 
     private int tickCounter = 0;
 
@@ -239,11 +248,27 @@ public class AutoCrystal extends Module {
 
     @Override
     public void onRender3D(){
-        if(espAlpha.getValue() > 0 && Wrapper.getPlayer() != null && Wrapper.getWorld() != null){
-            if(target != null)
-                RenderUtils.INSTANCE.drawBoundingBox(target.getRenderBoundingBox(), Zori.getInstance().clientSettings.getColor(espAlpha.getValue()), 1f);
-            if(renderPos != null)
-                RenderUtils.INSTANCE.drawBox(renderPos, Zori.getInstance().clientSettings.getColor(espAlpha.getValue()));
+        if(Wrapper.getPlayer() != null && Wrapper.getWorld() != null){
+            if(sync.getValue()){
+                Color c = Zori.getInstance().clientSettings.getColorr(255);
+
+                Red = c.getRed();
+                Green = c.getGreen();
+                Blue = c.getBlue();
+
+            }else{
+                Red = red.getValue();
+                Green = green.getValue();
+                Blue = blue.getValue();
+            }
+            if(renderPos != null) {
+                if (renderMode.getValue().equals(AutoCrystal.RenderMode.FULL)) {
+                    RenderUtils.INSTANCE.drawBoundingBox(renderPos, Red / 255f, Green / 255f, Blue / 255f, 0.50f, linewidth.getValue());
+                    RenderUtils.INSTANCE.drawBox(renderPos, Red / 255f, Green / 255f, Blue / 255f, 0.22f);
+                } else if (renderMode.getValue().equals(AutoCrystal.RenderMode.OUTLINE)) {
+                    RenderUtils.INSTANCE.drawBoundingBox(renderPos, Red / 255f, Green / 255f, Blue / 255f, 0.50f, linewidth.getValue());
+                }
+            }
         }
     }
 
@@ -430,5 +455,9 @@ public class AutoCrystal extends Module {
 
     private float calculateDamage(BlockPos blockPos, Entity entity){
         return calculateDamage(blockPos.getX() + .5, blockPos.getY() + 1, blockPos.getZ() + .5, entity);
+    }
+
+    public enum RenderMode{
+        FULL, OUTLINE
     }
 }
