@@ -18,10 +18,13 @@ public class ChatMacro extends Module {
     else if (mode.getValue().equals(Mode.CHINA)) {
             Wrapper.getPlayer().sendChatMessage("You just 1'd \u901a\u8fc7 Auto32k \u9ad8\u5e73\u6676\u4f53 PVP 2b2t (high ping kill low ping)");
         }
+            else if (mode.getValue().equals(Mode.CHARD)) {
+            Wrapper.getPlayer().sendChatMessage("quickscoped");
+        }
     }
 
     public enum Mode {
-        ZORI, CHINA
+        ZORI, CHINA, CHARD
     }
 }
 
