@@ -39,14 +39,18 @@ public class ModuleManager {
 
         // COMBAT
         new AutoTrap();
+        new AutoTotem();
         new Aura();
         new noDesync();
         new AutoCrystal();
         new Surround();
-        new SecretClose();
+        new PearlResolve();
+        new BlockLag();
         new Reach();
         new AutoCrystalTwo();
         new Offhand();
+        new OffhandCrystal();
+        new OffhandGap();
 
         // HUD
         new FPS();
@@ -114,7 +118,7 @@ public class ModuleManager {
     }
 
     @Nullable
-    public Module getModuleByName(String name){
+    public static Module getModuleByName(String name){
         return modules.getOrDefault(name.toLowerCase(), null);
     }
 
